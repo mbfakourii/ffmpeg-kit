@@ -51,17 +51,17 @@
 #include "fftools_sync_queue.h"
 #include "fftools_thread_queue.h"
 
-#include "../../../../../../../src/ffmpeg/libavutil/fifo.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/intreadwrite.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/log.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/mem.h"
-#include "../../../../../../../src/ffmpeg/libavutil/timestamp.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/thread.h"
+#include "libavutil/fifo.h"
+#include "libavutil/intreadwrite.h"
+#include "libavutil/log.h"
+#include "libavutil/mem.h"
+#include "libavutil/timestamp.h"
+#include "libavutil/thread.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/packet.h"
+#include "libavcodec/packet.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avformat.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avio.h"
+#include "libavformat/avformat.h"
+#include "libavformat/avio.h"
 
 __thread int want_sdp = 1;
 

@@ -59,7 +59,7 @@
  * - parentheses placed around assignments in condition to prevent -Wparentheses warning
  */
 
-#include "../../../../../../../src/ffmpeg/config.h"
+#include "config.h"
 
 #include <stdint.h>
 
@@ -74,26 +74,26 @@
 #include "fftools_opt_common.h"
 #include "fftools_sync_queue.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avformat.h"
+#include "libavformat/avformat.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavcodec/avcodec.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavcodec/bsf.h"
+#include "libavcodec/avcodec.h"
+#include "libavcodec/bsf.h"
 
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavfilter/avfilter.h"
+#include "libavfilter/avfilter.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/avassert.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/avstring.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/avutil.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/bprint.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/channel_layout.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/display.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/intreadwrite.h"
-#include "../../../../../../../src/ffmpeg/libavutil/fifo.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/mathematics.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/opt.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/parseutils.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/pixdesc.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/pixfmt.h"
+#include "libavutil/avassert.h"
+#include "libavutil/avstring.h"
+#include "libavutil/avutil.h"
+#include "libavutil/bprint.h"
+#include "libavutil/channel_layout.h"
+#include "libavutil/display.h"
+#include "libavutil/intreadwrite.h"
+#include "libavutil/fifo.h"
+#include "libavutil/mathematics.h"
+#include "libavutil/opt.h"
+#include "libavutil/parseutils.h"
+#include "libavutil/pixdesc.h"
+#include "libavutil/pixfmt.h"
 
 const char *const opt_name_codec_names[]                      = {"c", "codec", "acodec", "vcodec", "scodec", "dcodec", NULL};
 const char *const opt_name_frame_rates[]                      = {"r", NULL};

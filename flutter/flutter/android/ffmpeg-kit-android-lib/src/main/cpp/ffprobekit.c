@@ -21,10 +21,10 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include "../../../../../../../src/ffmpeg/config.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/jni.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/bprint.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/mem.h"
+#include "config.h"
+#include "libavcodec/jni.h"
+#include "libavutil/bprint.h"
+#include "libavutil/mem.h"
 #include "ffmpegkit.h"
 
 /** Forward declaration for function defined in fftools_ffprobe.c */

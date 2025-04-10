@@ -34,9 +34,9 @@
 
 #include <stdint.h>
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/packet.h"
+#include "libavcodec/packet.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/frame.h"
+#include "libavutil/frame.h"
 
 enum SyncQueueType {
     SYNC_QUEUE_PACKETS,

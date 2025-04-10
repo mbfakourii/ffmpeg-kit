@@ -92,7 +92,7 @@
  * - cleanup() method added
  */
 
-#include "../../../../../../../src/ffmpeg/config.h"
+#include "config.h"
 #include <ctype.h>
 #include <string.h>
 #include <math.h>
@@ -112,35 +112,35 @@
 #include <unistd.h>
 #endif
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avformat.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavdevice/avdevice.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libswresample/swresample.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/opt.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/channel_layout.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/parseutils.h"
-#include "../../../../../../../src/ffmpeg/libavutil/samplefmt.h"
-#include "../../../../../../../src/ffmpeg/libavutil/fifo.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/hwcontext.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/internal.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/intreadwrite.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/dict.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/display.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/mathematics.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/pixdesc.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/avstring.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/libm.h"
-#include "../../../../../../../src/ffmpeg/libavutil/imgutils.h"
-#include "../../../../../../../src/ffmpeg/libavutil/timestamp.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/bprint.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/time.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/thread.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/threadmessage.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavcodec/x86/mathops.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavformat/os_support.h"
+#include "libavformat/avformat.h"
+#include "libavdevice/avdevice.h"
+#include "libswresample/swresample.h"
+#include "libavutil/opt.h"
+#include "libavutil/channel_layout.h"
+#include "libavutil/parseutils.h"
+#include "libavutil/samplefmt.h"
+#include "libavutil/fifo.h"
+#include "libavutil/hwcontext.h"
+#include "libavutil/internal.h"
+#include "libavutil/intreadwrite.h"
+#include "libavutil/dict.h"
+#include "libavutil/display.h"
+#include "libavutil/mathematics.h"
+#include "libavutil/pixdesc.h"
+#include "libavutil/avstring.h"
+#include "libavutil/libm.h"
+#include "libavutil/imgutils.h"
+#include "libavutil/timestamp.h"
+#include "libavutil/bprint.h"
+#include "libavutil/time.h"
+#include "libavutil/thread.h"
+#include "libavutil/threadmessage.h"
+#include "libavcodec/mathops.h"
+#include "libavformat/os_support.h"
 
-# include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavfilter/avfilter.h"
-# include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavfilter/buffersrc.h"
-# include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavfilter/buffersink.h"
+# include "libavfilter/avfilter.h"
+# include "libavfilter/buffersrc.h"
+# include "libavfilter/buffersink.h"
 
 #if HAVE_SYS_RESOURCE_H
 #include <sys/time.h>
@@ -177,7 +177,7 @@
 #include "fftools_cmdutils.h"
 #include "fftools_sync_queue.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/avassert.h"
+#include "libavutil/avassert.h"
 
 static __thread FILE *vstats_file;
 

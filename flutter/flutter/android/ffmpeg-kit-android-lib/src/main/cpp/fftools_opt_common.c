@@ -43,47 +43,47 @@
  * - extern program_name declared
  */
 
-#include "../../../../../../../src/ffmpeg/config.h"
+#include "config.h"
 
 #include <stdio.h>
 
 #include "fftools_cmdutils.h"
 #include "fftools_opt_common.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/avassert.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/avstring.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/bprint.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/channel_layout.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/cpu.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/dict.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/error.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/ffversion.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/log.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/mem.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/parseutils.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/pixdesc.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/version.h"
+#include "libavutil/avassert.h"
+#include "libavutil/avstring.h"
+#include "libavutil/bprint.h"
+#include "libavutil/channel_layout.h"
+#include "libavutil/cpu.h"
+#include "libavutil/dict.h"
+#include "libavutil/error.h"
+#include "libavutil/ffversion.h"
+#include "libavutil/log.h"
+#include "libavutil/mem.h"
+#include "libavutil/parseutils.h"
+#include "libavutil/pixdesc.h"
+#include "libavutil/version.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavcodec/avcodec.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavcodec/bsf.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/codec.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/codec_desc.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/version.h"
+#include "libavcodec/avcodec.h"
+#include "libavcodec/bsf.h"
+#include "libavcodec/codec.h"
+#include "libavcodec/codec_desc.h"
+#include "libavcodec/version.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avformat.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/version.h"
+#include "libavformat/avformat.h"
+#include "libavformat/version.h"
 
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavdevice/avdevice.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/version.h"
+#include "libavdevice/avdevice.h"
+#include "libavdevice/version.h"
 
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavfilter/avfilter.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/version.h"
+#include "libavfilter/avfilter.h"
+#include "libavfilter/version.h"
 
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libswscale/swscale.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/version.h"
+#include "libswscale/swscale.h"
+#include "libswscale/version.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libswresample/swresample.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/version.h"
+#include "libswresample/swresample.h"
+#include "libswresample/version.h"
 
 enum show_muxdemuxers {
     SHOW_DEFAULT,

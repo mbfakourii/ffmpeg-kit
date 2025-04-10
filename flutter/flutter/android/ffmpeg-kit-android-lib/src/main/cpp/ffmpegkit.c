@@ -22,10 +22,10 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include "../../../../../../../src/ffmpeg/config.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/jni.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/bprint.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/file.h"
+#include "config.h"
+#include "libavcodec/jni.h"
+#include "libavutil/bprint.h"
+#include "libavutil/file.h"
 #include "fftools_ffmpeg.h"
 #include "ffmpegkit.h"
 #include "ffprobekit.h"

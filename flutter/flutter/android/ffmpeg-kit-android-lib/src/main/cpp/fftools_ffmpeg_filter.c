@@ -46,20 +46,20 @@
 
 #include "fftools_ffmpeg.h"
 
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavfilter/avfilter.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavfilter/buffersink.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavfilter/buffersrc.h"
+#include "libavfilter/avfilter.h"
+#include "libavfilter/buffersink.h"
+#include "libavfilter/buffersrc.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/avassert.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/avstring.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/bprint.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/channel_layout.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/display.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/opt.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/pixdesc.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/pixfmt.h"
-#include "../../../../../../../src/ffmpeg/libavutil/imgutils.h"
-#include "../../../../../../../src/ffmpeg/libavutil/samplefmt.h"
+#include "libavutil/avassert.h"
+#include "libavutil/avstring.h"
+#include "libavutil/bprint.h"
+#include "libavutil/channel_layout.h"
+#include "libavutil/display.h"
+#include "libavutil/opt.h"
+#include "libavutil/pixdesc.h"
+#include "libavutil/pixfmt.h"
+#include "libavutil/imgutils.h"
+#include "libavutil/samplefmt.h"
 
 // FIXME: YUV420P etc. are actually supported with full color range,
 // yet the latter information isn't available here.

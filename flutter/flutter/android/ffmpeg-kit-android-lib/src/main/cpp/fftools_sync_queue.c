@@ -33,11 +33,11 @@
 #include <stdint.h>
 #include <string.h>
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/avassert.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/error.h"
-#include "../../../../../../../src/ffmpeg/libavutil/fifo.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/mathematics.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/mem.h"
+#include "libavutil/avassert.h"
+#include "libavutil/error.h"
+#include "libavutil/fifo.h"
+#include "libavutil/mathematics.h"
+#include "libavutil/mem.h"
 
 #include "fftools_objpool.h"
 #include "fftools_sync_queue.h"

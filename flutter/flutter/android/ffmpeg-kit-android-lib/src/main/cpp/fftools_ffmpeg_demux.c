@@ -38,22 +38,22 @@
 #include "fftools_ffmpeg.h"
 #include "fftools_ffmpeg_mux.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/avassert.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/avstring.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/display.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/error.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/intreadwrite.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/opt.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/parseutils.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/pixdesc.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/time.h"
-#include "../../../../../../../src/ffmpeg/libavutil/timestamp.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/thread.h"
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/threadmessage.h"
+#include "libavutil/avassert.h"
+#include "libavutil/avstring.h"
+#include "libavutil/display.h"
+#include "libavutil/error.h"
+#include "libavutil/intreadwrite.h"
+#include "libavutil/opt.h"
+#include "libavutil/parseutils.h"
+#include "libavutil/pixdesc.h"
+#include "libavutil/time.h"
+#include "libavutil/timestamp.h"
+#include "libavutil/thread.h"
+#include "libavutil/threadmessage.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/packet.h"
+#include "libavcodec/packet.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avformat.h"
+#include "libavformat/avformat.h"
 
 static const char *const opt_name_discard[]                   = {"discard", NULL};
 static const char *const opt_name_reinit_filters[]            = {"reinit_filter", NULL};

@@ -23,8 +23,8 @@
 #include <jni.h>
 #include <android/log.h>
 
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/log.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/ffversion.h"
+#include "libavutil/log.h"
+#include "libavutil/ffversion.h"
 
 /** Library version string */
 #define FFMPEG_KIT_VERSION "6.0"

@@ -45,13 +45,13 @@
 
 #include "fftools_thread_queue.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avformat.h"
+#include "libavformat/avformat.h"
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/packet.h"
+#include "libavcodec/packet.h"
 
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/dict.h"
-#include "../../../../../../../src/ffmpeg/libavutil/fifo.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavutil/thread.h"
+#include "libavutil/dict.h"
+#include "libavutil/fifo.h"
+#include "libavutil/thread.h"
 
 #define SPECIFIER_OPT_FMT_str  "%s"
 #define SPECIFIER_OPT_FMT_i    "%i"

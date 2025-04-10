@@ -35,7 +35,7 @@
 #ifndef FFTOOLS_OPT_COMMON_H
 #define FFTOOLS_OPT_COMMON_H
 
-#include "../../../../../../../src/ffmpeg/config.h"
+#include "config.h"
 
 #include "fftools_cmdutils.h"
 

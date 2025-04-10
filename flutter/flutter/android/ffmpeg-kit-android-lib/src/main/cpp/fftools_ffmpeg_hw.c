@@ -43,9 +43,9 @@
 
 #include <string.h>
 
-#include "../../../../../../../prebuilt/android-arm-neon/ffmpeg/include/libavutil/avstring.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/pixdesc.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavfilter/buffersink.h"
+#include "libavutil/avstring.h"
+#include "libavutil/pixdesc.h"
+#include "libavfilter/buffersink.h"
 
 #include "fftools_ffmpeg.h"
 

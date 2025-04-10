@@ -17,7 +17,7 @@
  * along with FFmpegKit.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "../../../../../../../prebuilt/android-arm-neon/cpu-features/include/ndk_compat/cpu-features.h"
+#include "cpu-features.h"
 #include "fftools_ffmpeg.h"
 #include "ffmpegkit_abidetect.h"
 

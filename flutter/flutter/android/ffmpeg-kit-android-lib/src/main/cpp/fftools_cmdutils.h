@@ -66,11 +66,11 @@
 
 #include <stdint.h>
 
-#include "../../../../../../../src/ffmpeg/config.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavcodec/avcodec.h"
-#include "../../../../../../../prebuilt/android-arm/ffmpeg/include/libavfilter/avfilter.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavformat/avformat.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libswscale/swscale.h"
+#include "config.h"
+#include "libavcodec/avcodec.h"
+#include "libavfilter/avfilter.h"
+#include "libavformat/avformat.h"
+#include "libswscale/swscale.h"
 
 #ifdef _WIN32
 #undef main /* We don't want SDL to override our main() */

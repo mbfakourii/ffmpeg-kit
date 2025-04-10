@@ -32,12 +32,12 @@
 
 #include <stdint.h>
 
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavcodec/packet.h"
+#include "libavcodec/packet.h"
 
-#include "../../../../../../../src/ffmpeg/libavutil/common.h"
-#include "../../../../../../../prebuilt/android-x86_64/ffmpeg/include/libavutil/error.h"
-#include "../../../../../../../prebuilt/android-x86/ffmpeg/include/libavutil/frame.h"
-#include "../../../../../../../prebuilt/android-arm64/ffmpeg/include/libavutil/mem.h"
+#include "libavutil/common.h"
+#include "libavutil/error.h"
+#include "libavutil/frame.h"
+#include "libavutil/mem.h"
 
 #include "fftools_objpool.h"
 
