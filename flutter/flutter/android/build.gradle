@@ -2,6 +2,8 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+
+        maven { url 'https://jitpack.io' } // ✅ add this
     }
 
     dependencies {
@@ -13,6 +15,8 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+
+        maven { url 'https://jitpack.io' } // ✅ and here too
     }
 }
 
@@ -49,5 +53,5 @@ android {
 
 dependencies {
     implementation 'androidx.annotation:annotation:1.5.0'
-    implementation project(':ffmpeg-kit-android-lib')
+    implementation 'com.github.mbfakourii:eeee:2.0.1'
 }
