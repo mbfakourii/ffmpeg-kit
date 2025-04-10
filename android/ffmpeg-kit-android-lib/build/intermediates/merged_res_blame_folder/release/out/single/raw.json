@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_cpu_features.txt",
+        "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_cpu_features.txt"
+    },
+    {
+        "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license.txt",
+        "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license.txt"
+    },
+    {
+        "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/source.txt",
+        "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/source.txt"
+    }
+]
