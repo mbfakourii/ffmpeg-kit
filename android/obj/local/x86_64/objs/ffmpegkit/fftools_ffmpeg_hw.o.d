@@ -1,16 +1,26 @@
 ./obj/local/x86_64/objs/ffmpegkit/fftools_ffmpeg_hw.o: \
   jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_ffmpeg_hw.c \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/string.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/__config \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avstring.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdint.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/attributes.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/version.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/macros.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avconfig.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/pixdesc.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/pixfmt.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/buffersink.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/avfilter.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avutil.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/common.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/errno.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/limits.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/math.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdio.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdlib.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/mem.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/error.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/rational.h \
@@ -26,6 +36,7 @@
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/version.h \
   jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_ffmpeg.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/config.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/atomic \
   jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_cmdutils.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/avcodec.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec.h \
@@ -54,7 +65,15 @@
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libswresample/version_major.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libswresample/version.h
 
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/string.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/__config:
+
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avstring.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stddef.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdint.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/attributes.h:
 
@@ -66,6 +85,8 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avco
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/pixdesc.h:
 
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h:
+
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/pixfmt.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/buffersink.h:
@@ -75,6 +96,16 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/av
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avutil.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/common.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/errno.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/limits.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/math.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdio.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/mem.h:
 
@@ -105,6 +136,8 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/ve
 jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_ffmpeg.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/config.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/atomic:
 
 jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_cmdutils.h:
 

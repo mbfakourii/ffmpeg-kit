@@ -2,16 +2,26 @@
   jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_ffprobe.c \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/config.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/ffversion.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/string.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/__config \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/math.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavformat/avformat.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdio.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavcodec/codec.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdint.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/avutil.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/common.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/errno.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/limits.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdlib.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/attributes.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/macros.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/avconfig.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/mem.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/version.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/error.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stddef.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/rational.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/mathematics.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/intfloat.h \
@@ -69,19 +79,38 @@
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavfilter/version.h \
   jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_opt_common.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/thread.h \
-  jni/../ffmpeg-kit-android-lib/src/main/cpp/ffmpegkit_exception.h
+  jni/../ffmpeg-kit-android-lib/src/main/cpp/ffmpegkit_exception.h \
+  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/setjmp.h
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/config.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/ffversion.h:
 
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/string.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/__config:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/math.h:
+
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavformat/avformat.h:
 
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdio.h:
+
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavcodec/codec.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdint.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/avutil.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/common.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/errno.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/limits.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/attributes.h:
 
@@ -94,6 +123,8 @@ jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/liba
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/version.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/error.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stddef.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/rational.h:
 
@@ -210,3 +241,5 @@ jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_opt_common.h:
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/thread.h:
 
 jni/../ffmpeg-kit-android-lib/src/main/cpp/ffmpegkit_exception.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/setjmp.h:

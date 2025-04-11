@@ -1,5 +1,28 @@
 R_DEF: Internal format may change without notice
 local
 raw license
+raw license_chromaprint
 raw license_cpu_features
+raw license_dav1d
+raw license_kvazaar
+raw license_libaom
+raw license_libilbc
+raw license_libogg
+raw license_libtheora
+raw license_libvidstab
+raw license_libvorbis
+raw license_libvpx
+raw license_opencore_amr
+raw license_openh264
+raw license_opus
+raw license_sdl
+raw license_shine
+raw license_snappy
+raw license_soxr
+raw license_speex
+raw license_vo_amrwbenc
+raw license_x264
+raw license_x265
+raw license_xvidcore
+raw license_zimg
 raw source
