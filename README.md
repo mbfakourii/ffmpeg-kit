@@ -39,7 +39,7 @@ export ANDROID_NDK_ROOT=/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393
 
 ## Commands
 
-./android.sh --enable-android-media-codec --enable-android-zlib --full --enable-gpl --full --enable-gpl --disable-lib-srt
+./android.sh --enable-android-media-codec --enable-android-zlib --full --enable-gpl --disable-lib-srt
 
 ./ios.sh --xcframework --enable-ios-audiotoolbox --enable-ios-avfoundation --enable-ios-bzip2 --enable-ios-libiconv --enable-ios-videotoolbox --enable-ios-zlib --full --enable-gpl --disable-lib-srt
 
