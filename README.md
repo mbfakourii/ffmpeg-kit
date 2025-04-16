@@ -1,3 +1,63 @@
+# Run needed in mac
+## Host is important
+
+https://github.com/arthenica/ffmpeg-kit/wiki/Host-Support
+
+## install packages
+
+brew install nettle bash gnu-make bash libiconv gmp cmake  gperf  yasm bison autogen wget autopoint meson ninja ragel groff gtk-doc-tools libtasn1-1 autoconf automake libtool pkg-config curl git doxygen nasm zlib libpng utoconf gettext build-essential texinfo autopkgr gtk-doc-toolsbrew install gtk-doc brew gcc libtasn1 tree openjdk@17
+
+https://github.com/tanersener/ffmpeg-kit/wiki/Troubleshooting
+bison > 2.4
+brew install bison
+
+Install packages
+https://github.com/arthenica/ffmpeg-kit/wiki/Android-Prerequisites
+https://github.com/arthenica/ffmpeg-kit/wiki/iOS-Prerequisites
+https://github.com/arthenica/ffmpeg-kit/wiki/macOS-Prerequisites
+
+## Improve sourse.sh
+
+libpng upgrade to SOURCE_ID="v1.6.40" in sourse.sh
+gnutls upgrade to 3.8.8 and version 3.8.9 has bug in LICENSE copy
+
+## Add paths
+
+sudo nano ~/.zshrc
+
+export PATH="/Users/mbfakouri/Library/Android/sdk/cmake/3.22.1/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/Users/mbfakouri/Documents/develop/flutter/bin:$PATH"
+export PATH="$(brew --prefix bison)/bin:$PATH"
+
+source ~/.zshrc
+
+## Android paths
+
+export ANDROID_SDK_ROOT=/Users/mbfakouri/Library/Android/sdk
+export ANDROID_NDK_ROOT=/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393
+
+## Commands
+
+./android.sh --enable-android-media-codec --enable-android-zlib --full --enable-gpl --full --enable-gpl --disable-lib-srt
+
+./ios.sh --xcframework --enable-ios-audiotoolbox --enable-ios-avfoundation --enable-ios-bzip2 --enable-ios-libiconv --enable-ios-videotoolbox --enable-ios-zlib --full --enable-gpl --disable-lib-srt
+
+./macos.sh --xcframework --enable-macos-audiotoolbox --enable-macos-avfoundation --enable-macos-bzip2 --enable-macos-coreimage --enable-macos-libiconv --enable-macos-opencl --enable-macos-opengl --enable-macos-videotoolbox --enable-macos-zlib --full --enable-gpl --disable-lib-srt
+
+## Copy Build files
+
+mkdir -p flutter/flutter/macos/Frameworks
+cp -R prebuilt/bundle-apple-xcframework-macos/* flutter/flutter/macos/Frameworks/
+
+mkdir -p flutter/flutter/ios/Frameworks
+cp -R prebuilt/bundle-apple-xcframework-ios/* flutter/flutter/ios/Frameworks/
+
+Use -R instead of -r because the signature copy will not work properly, especially in macOS output.
+
+
+--------------------------------------------------------
+
 # FFmpegKit ![GitHub release](https://img.shields.io/badge/release-v6.0-blue.svg) ![Maven Central](https://img.shields.io/maven-central/v/com.arthenica/ffmpeg-kit-min) ![CocoaPods](https://img.shields.io/cocoapods/v/ffmpeg-kit-ios-min) ![pub](https://img.shields.io/pub/v/ffmpeg_kit_flutter.svg) ![npm](https://img.shields.io/npm/v/ffmpeg-kit-react-native.svg)
 
 ## Notice
