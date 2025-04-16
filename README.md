@@ -53,7 +53,8 @@ cp -R prebuilt/bundle-apple-xcframework-ios/* flutter/flutter/ios/Frameworks/
 mkdir -p flutter/flutter/macos/Frameworks<br>
 cp -R prebuilt/bundle-apple-xcframework-macos/* flutter/flutter/macos/Frameworks/
 
-Use -R instead of -r because the signature copy will not work properly, especially in macOS output.
+Use -R instead of -r because the signature copy will not work properly, especially in macOS output.<br>
+https://blog.inventic.eu/2015/03/os-x-codesign-failed-bundle-format-is-ambiguous-could-be-app-or-framework/
 
 --------------------------------------------------------
 
