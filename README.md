@@ -1,4 +1,4 @@
-# Run needed in mac
+# Requires running on Mac
 ## Host is important
 
 https://github.com/arthenica/ffmpeg-kit/wiki/Host-Support
