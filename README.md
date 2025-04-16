@@ -7,34 +7,34 @@ https://github.com/arthenica/ffmpeg-kit/wiki/Host-Support
 
 brew install nettle bash gnu-make bash libiconv gmp cmake  gperf  yasm bison autogen wget autopoint meson ninja ragel groff gtk-doc-tools libtasn1-1 autoconf automake libtool pkg-config curl git doxygen nasm zlib libpng utoconf gettext build-essential texinfo autopkgr gtk-doc-toolsbrew install gtk-doc brew gcc libtasn1 tree openjdk@17
 
-https://github.com/tanersener/ffmpeg-kit/wiki/Troubleshooting
-bison > 2.4
-brew install bison
+https://github.com/tanersener/ffmpeg-kit/wiki/Troubleshooting<br>
+bison > 2.4<br>
+brew install bison<br>
 
-Install packages
-https://github.com/arthenica/ffmpeg-kit/wiki/Android-Prerequisites
-https://github.com/arthenica/ffmpeg-kit/wiki/iOS-Prerequisites
-https://github.com/arthenica/ffmpeg-kit/wiki/macOS-Prerequisites
+Install packages<br>
+https://github.com/arthenica/ffmpeg-kit/wiki/Android-Prerequisites<br>
+https://github.com/arthenica/ffmpeg-kit/wiki/iOS-Prerequisites<br>
+https://github.com/arthenica/ffmpeg-kit/wiki/macOS-Prerequisites<br>
 
 ## Improve sourse.sh
 
-libpng upgrade to SOURCE_ID="v1.6.40" in sourse.sh
+libpng upgrade to SOURCE_ID="v1.6.40" in sourse.sh<br>
 gnutls upgrade to 3.8.8 and version 3.8.9 has bug in LICENSE copy
 
 ## Add paths
 
-sudo nano ~/.zshrc
+sudo nano ~/.zshrc<br>
 
-export PATH="/Users/mbfakouri/Library/Android/sdk/cmake/3.22.1/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-export PATH="/Users/mbfakouri/Documents/develop/flutter/bin:$PATH"
-export PATH="$(brew --prefix bison)/bin:$PATH"
+export PATH="/Users/mbfakouri/Library/Android/sdk/cmake/3.22.1/bin:$PATH"<br>
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"<br>
+export PATH="/Users/mbfakouri/Documents/develop/flutter/bin:$PATH"<br>
+export PATH="$(brew --prefix bison)/bin:$PATH"<br>
 
-source ~/.zshrc
+source ~/.zshrc<br>
 
 ## Android paths
 
-export ANDROID_SDK_ROOT=/Users/mbfakouri/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/mbfakouri/Library/Android/sdk<br>
 export ANDROID_NDK_ROOT=/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393
 
 ## Commands
