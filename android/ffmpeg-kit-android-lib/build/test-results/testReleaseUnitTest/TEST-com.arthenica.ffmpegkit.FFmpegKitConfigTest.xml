@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.arthenica.ffmpegkit.FFmpegKitConfigTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-04-11T20:55:09" hostname="mbfakouris-MacBook-Air.local" time="0.005">
+<testsuite name="com.arthenica.ffmpegkit.FFmpegKitConfigTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-04-16T12:26:30" hostname="mbfakouris-MacBook-Air.local" time="0.005">
   <properties/>
-  <testcase name="extractExtensionFromSafDisplayName" classname="com.arthenica.ffmpegkit.FFmpegKitConfigTest" time="0.003"/>
+  <testcase name="extractExtensionFromSafDisplayName" classname="com.arthenica.ffmpegkit.FFmpegKitConfigTest" time="0.004"/>
   <testcase name="getPackageName" classname="com.arthenica.ffmpegkit.FFmpegKitConfigTest" time="0.0"/>
   <testcase name="setSessionHistorySize" classname="com.arthenica.ffmpegkit.FFmpegKitConfigTest" time="0.001"/>
   <testcase name="getExternalLibraries" classname="com.arthenica.ffmpegkit.FFmpegKitConfigTest" time="0.0"/>

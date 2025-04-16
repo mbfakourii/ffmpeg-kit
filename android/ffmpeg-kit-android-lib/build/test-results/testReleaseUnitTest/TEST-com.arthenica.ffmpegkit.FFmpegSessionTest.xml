@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.arthenica.ffmpegkit.FFmpegSessionTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-11T20:55:09" hostname="mbfakouris-MacBook-Air.local" time="0.003">
+<testsuite name="com.arthenica.ffmpegkit.FFmpegSessionTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-16T12:26:30" hostname="mbfakouris-MacBook-Air.local" time="0.003">
   <properties/>
-  <testcase name="constructorTest" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.001"/>
+  <testcase name="constructorTest" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.0"/>
   <testcase name="getSessionIdTest" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.0"/>
-  <testcase name="getLogsAsStringTest" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.001"/>
+  <testcase name="getLogsAsStringTest" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.0"/>
   <testcase name="completeTest" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.0"/>
-  <testcase name="constructorTest2" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.0"/>
+  <testcase name="constructorTest2" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.001"/>
   <testcase name="constructorTest3" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.0"/>
   <testcase name="getLogs" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.0"/>
   <testcase name="failTest" classname="com.arthenica.ffmpegkit.FFmpegSessionTest" time="0.001"/>

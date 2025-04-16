@@ -1,8 +1,8 @@
 name: apple nightly builds
 
-on:
-  schedule:
-    - cron:  '0 1 * * 0'
+#on:
+#  schedule:
+#    - cron:  '0 1 * * 0'
 
 jobs:
   build-ios-main-on-macos-sonoma:

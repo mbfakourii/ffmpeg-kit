@@ -62,8 +62,8 @@ get_library_source() {
     SOURCE_TYPE="TAG"
     ;;
   gnutls)
-    SOURCE_REPO_URL="https://github.com/arthenica/gnutls"
-    SOURCE_ID="3.7.9"
+    SOURCE_REPO_URL="https://github.com/gnutls/gnutls"
+    SOURCE_ID="3.8.8"
     SOURCE_TYPE="TAG"
     ;;
   harfbuzz)
@@ -118,7 +118,7 @@ get_library_source() {
     ;;
   libpng)
     SOURCE_REPO_URL="https://github.com/arthenica/libpng"
-    SOURCE_ID="v1.6.40"
+    SOURCE_ID="v1.6.47"
     SOURCE_TYPE="TAG"
     ;;
   libsamplerate)

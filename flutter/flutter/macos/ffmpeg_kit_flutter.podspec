@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source_files        = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
 
-  s.default_subspec     = 'https'
+  s.default_subspec     = 'precompiled-gpl'
 
   s.dependency          'FlutterMacOS'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
@@ -132,4 +132,14 @@ Pod::Spec.new do |s|
     ss.osx.deployment_target = '10.12'
   end
 
+  s.subspec 'precompiled-gpl' do |ss|
+      ss.vendored_frameworks = 'Frameworks/ffmpegkit.xcframework',
+                               'Frameworks/libavcodec.xcframework',
+                               'Frameworks/libavdevice.xcframework',
+                               'Frameworks/libavfilter.xcframework',
+                               'Frameworks/libavformat.xcframework',
+                               'Frameworks/libavutil.xcframework',
+                               'Frameworks/libswresample.xcframework',
+                               'Frameworks/libswscale.xcframework'
+  end
 end

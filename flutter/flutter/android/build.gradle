@@ -52,5 +52,5 @@ android {
 dependencies {
     implementation 'androidx.annotation:annotation:1.5.0'
     api 'com.arthenica:smart-exception-java:0.2.1'
-    implementation 'com.github.mbfakourii:android_ffmpeg_kit_build:0.0.1'
+    implementation 'com.github.mbfakourii:android_ffmpeg_kit_build:1.0.1'
 }
