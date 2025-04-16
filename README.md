@@ -47,14 +47,13 @@ export ANDROID_NDK_ROOT=/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393
 
 ## Copy Build files
 
-mkdir -p flutter/flutter/macos/Frameworks<br>
-cp -R prebuilt/bundle-apple-xcframework-macos/* flutter/flutter/macos/Frameworks/
-
 mkdir -p flutter/flutter/ios/Frameworks<br>
 cp -R prebuilt/bundle-apple-xcframework-ios/* flutter/flutter/ios/Frameworks/
 
-Use -R instead of -r because the signature copy will not work properly, especially in macOS output.
+mkdir -p flutter/flutter/macos/Frameworks<br>
+cp -R prebuilt/bundle-apple-xcframework-macos/* flutter/flutter/macos/Frameworks/
 
+Use -R instead of -r because the signature copy will not work properly, especially in macOS output.
 
 --------------------------------------------------------
 
