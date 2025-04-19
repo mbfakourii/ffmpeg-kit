@@ -20,14 +20,14 @@
   /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdio.h \
   /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdlib.h \
   /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/string.h \
-  jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/mem.h \
-  jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/avutil.h \
   jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/error.h \
+  jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/mem.h \
+  jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/frame.h \
+  jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/avutil.h \
   jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/mathematics.h \
   jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/intfloat.h \
   jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/log.h \
   jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/pixfmt.h \
-  jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/frame.h \
   jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/channel_layout.h \
   jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/samplefmt.h \
   jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_objpool.h
@@ -72,11 +72,13 @@ jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/commo
 
 /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/string.h:
 
+jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/error.h:
+
 jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/mem.h:
 
-jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/avutil.h:
+jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/frame.h:
 
-jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/error.h:
+jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/avutil.h:
 
 jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/mathematics.h:
 
@@ -85,8 +87,6 @@ jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/intfl
 jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/log.h:
 
 jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/pixfmt.h:
-
-jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/frame.h:
 
 jni/ffmpeg/../../../prebuilt/android-arm64/ffmpeg/lib/../include/libavutil/channel_layout.h:
 

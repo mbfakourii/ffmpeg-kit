@@ -17,16 +17,6 @@
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/intreadwrite.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/bswap.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/mem.h \
-  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/limits.h \
-  jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/avutil.h \
-  jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/common.h \
-  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h \
-  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/math.h \
-  /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdio.h \
-  jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/rational.h \
-  jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/mathematics.h \
-  jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/intfloat.h \
-  jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/pixfmt.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/thread.h \
   jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/config.h \
   jni/../ffmpeg-kit-android-lib/src/main/cpp/fftools_objpool.h \
@@ -65,26 +55,6 @@ jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/liba
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/bswap.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/mem.h:
-
-/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/limits.h:
-
-jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/avutil.h:
-
-jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/common.h:
-
-/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h:
-
-/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/math.h:
-
-/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stdio.h:
-
-jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/rational.h:
-
-jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/mathematics.h:
-
-jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/intfloat.h:
-
-jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/pixfmt.h:
 
 jni/ffmpeg/neon/../../../../prebuilt/android-arm-neon/ffmpeg/lib/../include/libavutil/thread.h:
 

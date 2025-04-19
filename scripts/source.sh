@@ -33,7 +33,7 @@ get_library_source() {
     ;;
   ffmpeg)
     SOURCE_REPO_URL="https://github.com/arthenica/FFmpeg"
-    SOURCE_ID="n6.0"
+    SOURCE_ID="n7.1.1"
     SOURCE_TYPE="TAG"
     ;;
   fontconfig)
@@ -63,7 +63,7 @@ get_library_source() {
     ;;
   gnutls)
     SOURCE_REPO_URL="https://github.com/gnutls/gnutls"
-    SOURCE_ID="3.8.8"
+    SOURCE_ID="3.8.9"
     SOURCE_TYPE="TAG"
     ;;
   harfbuzz)

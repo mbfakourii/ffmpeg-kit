@@ -292,3 +292,16 @@ See our [CONTRIBUTING](CONTRIBUTING.md) guide.
 - [FFmpeg API Documentation](https://ffmpeg.org/doxygen/4.0/index.html)
 - [FFmpeg Wiki](https://trac.ffmpeg.org/wiki/WikiStart)
 - [FFmpeg External Library Licenses](https://www.ffmpeg.org/doxygen/4.0/md_LICENSE.html)
+
+### For 7.1.1
+
+Upgrade FFmpeg version from n6.0 to n7.1.1 in source.sh<br>
+Upgrade gnutls version from 3.8.8 to 3.8.9 in source.sh
+
+Change gnutls license path in new version in function.sh
+
+Change TARGET_CPU and TARGET_ARCH in x86 cpus from `x86_64` to `x86-64` in android and apple
+
+Remove overwrite_file emms.h in android and apple
+
+Add new include in android ffprobekit.c in ffmpeg-kit-android-lib

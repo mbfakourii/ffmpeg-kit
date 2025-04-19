@@ -32,7 +32,7 @@ android {
         minSdkVersion 24
         targetSdkVersion 33
         versionCode 603
-        versionName "6.0.3"
+        versionName "7.1.1"
     }
 
     buildTypes {
@@ -52,5 +52,5 @@ android {
 dependencies {
     implementation 'androidx.annotation:annotation:1.5.0'
     api 'com.arthenica:smart-exception-java:0.2.1'
-    implementation 'com.github.mbfakourii:android_ffmpeg_kit_build:1.0.1'
+    implementation 'com.github.mbfakourii:android_ffmpeg_kit_build:1.1.0'
 }

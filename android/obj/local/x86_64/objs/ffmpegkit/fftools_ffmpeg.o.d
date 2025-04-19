@@ -21,30 +21,30 @@
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avutil.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/common.h \
   /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/macros.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avconfig.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/mem.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/version.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/error.h \
   /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/macros.h \
+  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avconfig.h \
+  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/version.h \
+  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/mem.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/rational.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/mathematics.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/intfloat.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/log.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/pixfmt.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/buffer.h \
+  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/channel_layout.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/dict.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/frame.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/channel_layout.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/hwcontext.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_id.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/version_major.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_desc.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_par.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/defs.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/packet.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/version.h \
+  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_desc.h \
+  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_par.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/avfilter.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/version_major.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/version.h \
@@ -65,9 +65,6 @@
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/parseutils.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/fifo.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/internal.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/timer.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/x86/timer.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/x86/emms.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/libm.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/intreadwrite.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/bswap.h \
@@ -82,8 +79,6 @@
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/threadmessage.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/mathops.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/attributes_internal.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/x86/mathops.h \
-  jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/x86/asm.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavformat/os_support.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/buffersrc.h \
   jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/buffersink.h \
@@ -135,17 +130,17 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/comm
 
 /Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/inttypes.h:
 
+jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/error.h:
+
+/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stddef.h:
+
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/macros.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/avconfig.h:
 
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/mem.h:
-
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/version.h:
 
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/error.h:
-
-/Users/mbfakouri/Library/Android/sdk/ndk/25.1.8937393/sources/cxx-stl/llvm-libc++/include/stddef.h:
+jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/mem.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/rational.h:
 
@@ -159,11 +154,11 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/pixf
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/buffer.h:
 
+jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/channel_layout.h:
+
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/dict.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/frame.h:
-
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/channel_layout.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec.h:
 
@@ -173,15 +168,15 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/cod
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/version_major.h:
 
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_desc.h:
-
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_par.h:
-
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/defs.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/packet.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/version.h:
+
+jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_desc.h:
+
+jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/codec_par.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavfilter/avfilter.h:
 
@@ -223,12 +218,6 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/fifo
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/internal.h:
 
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/timer.h:
-
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/x86/timer.h:
-
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/x86/emms.h:
-
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/libm.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/intreadwrite.h:
@@ -256,10 +245,6 @@ jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/thre
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/mathops.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/attributes_internal.h:
-
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavcodec/x86/mathops.h:
-
-jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavutil/x86/asm.h:
 
 jni/ffmpeg/../../../prebuilt/android-x86_64/ffmpeg/lib/../include/libavformat/os_support.h:
 
