@@ -252,10 +252,85 @@ namespace ffmpeg_kit_flutter {
                             flutter::EncodableValue(session->getCommand());
 
                     result->Success(flutter::EncodableValue(sessionMap));
-                }
             }
-        } else if (method_call.method_name().compare("mediaInformationSession") == 0) {
-            const auto *arguments = std::get_if<flutter::EncodableMap>(method_call.arguments());
+        }
+    } else if (method_call.method_name().compare("ffprobeSession") == 0) {
+        const auto *arguments = std::get_if<flutter::EncodableMap>(method_call.arguments());
+
+        if (arguments) {
+            auto it = arguments->find(flutter::EncodableValue("arguments"));
+            if (it != arguments->end()) {
+                const auto &argumentList = std::get<flutter::EncodableList>(it->second);
+
+                std::list <std::string> argumentsList;
+
+                for (const auto &value: argumentList) {
+                    if (std::holds_alternative<std::string>(value)) {
+                        argumentsList.push_back(std::get<std::string>(value));
+                    }
+                }
+
+                std::shared_ptr <ffmpeg_kit_flutter::FFprobeSession> session = ffmpeg_kit_flutter::FFprobeSession::create(
+                        argumentsList,
+                        [](const std::shared_ptr <ffmpeg_kit_flutter::FFprobeSession> session) {
+                            flutter::EncodableMap sessionMap;
+                            sessionMap[flutter::EncodableValue("sessionId")] =
+                                    flutter::EncodableValue(session->getSessionId());
+
+                            flutter::EncodableMap sessionOut;
+                            sessionOut[flutter::EncodableValue(
+                                    "FFmpegKitCompleteCallbackEvent")] = flutter::EncodableValue(
+                                    sessionMap);
+
+                            // Send event to the main thread
+                            sendEventToPlatformThread(flutter::EncodableValue(sessionOut));
+                        });
+
+                flutter::EncodableMap sessionMap;
+                sessionMap[flutter::EncodableValue("sessionId")] =
+                        flutter::EncodableValue(session->getSessionId());
+                auto createTime = std::chrono::duration_cast<std::chrono::milliseconds>(
+                        session->getCreateTime().time_since_epoch()).count();
+                sessionMap[flutter::EncodableValue("createTime")] =
+                        flutter::EncodableValue(static_cast<int64_t>(createTime));
+                auto startTime = std::chrono::duration_cast<std::chrono::milliseconds>(
+                        session->getStartTime().time_since_epoch()).count();
+                sessionMap[flutter::EncodableValue("startTime")] =
+                        flutter::EncodableValue(static_cast<int64_t>(startTime));
+                sessionMap[flutter::EncodableValue("command")] =
+                        flutter::EncodableValue(session->getCommand());
+
+                result->Success(flutter::EncodableValue(sessionMap));
+            }
+        }
+    } else if (method_call.method_name().compare("ffprobeSessionExecute") == 0) {
+        const auto *arguments = std::get_if<flutter::EncodableMap>(method_call.arguments());
+
+        if (arguments) {
+            auto it = arguments->find(flutter::EncodableValue("sessionId"));
+            if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
+                long sessionId = std::get<int>(it->second);
+
+                std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
+                        sessionId);
+                std::shared_ptr <ffmpeg_kit_flutter::FFprobeSession> ffprobeSession = std::static_pointer_cast<ffmpeg_kit_flutter::FFprobeSession>(
+                        session);
+
+                std::thread([ffprobeSession, result = std::move(result)]() mutable {
+                    ffmpeg_kit_flutter::FFmpegKitConfig::ffprobeExecute(ffprobeSession);
+
+                    result->Success();
+                }).detach();
+            } else {
+                result->Error("INVALID_ARGUMENT", "Missing or invalid sessionId");
+                return;
+            }
+        } else {
+            result->Error("INVALID_ARGUMENT", "Arguments are not a map");
+            return;
+        }
+    } else if (method_call.method_name().compare("mediaInformationSession") == 0) {
+        const auto *arguments = std::get_if<flutter::EncodableMap>(method_call.arguments());
 
             if (arguments) {
                 auto it = arguments->find(flutter::EncodableValue("arguments"));
