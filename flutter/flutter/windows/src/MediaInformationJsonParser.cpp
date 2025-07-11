@@ -43,24 +43,31 @@ ffmpeg_kit_flutter::MediaInformationJsonParser::fromWithError(
                                                                                                  ffmpeg_kit_flutter::Chapter>>>();
 
         if (document->HasMember(MediaInformationJsonParserKeyStreams)) {
-            rapidjson::Value &streamArray = (*document.get())[MediaInformationJsonParserKeyStreams];
+            rapidjson::Value &streamArray = (*document)[MediaInformationJsonParserKeyStreams];
             if (streamArray.IsArray()) {
                 for (rapidjson::SizeType i = 0; i < streamArray.Size(); i++) {
-                    auto stream = std::make_shared<rapidjson::Value>();
-                    *stream = streamArray[i];
+                    auto streamValue = std::make_shared<rapidjson::Value>(
+                            streamArray[i],
+                            document->GetAllocator()
+                    );
                     streams->push_back(
-                            std::make_shared<ffmpeg_kit_flutter::StreamInformation>(stream));
+                            std::make_shared<ffmpeg_kit_flutter::StreamInformation>(streamValue)
+                    );
                 }
             }
         }
 
         if (document->HasMember(MediaInformationJsonParserKeyChapters)) {
-            rapidjson::Value &chapterArray = (*document.get())[MediaInformationJsonParserKeyChapters];
+            rapidjson::Value &chapterArray = (*document)[MediaInformationJsonParserKeyChapters];
             if (chapterArray.IsArray()) {
                 for (rapidjson::SizeType i = 0; i < chapterArray.Size(); i++) {
-                    auto chapter = std::make_shared<rapidjson::Value>();
-                    *chapter = chapterArray[i];
-                    chapters->push_back(std::make_shared<ffmpeg_kit_flutter::Chapter>(chapter));
+                    auto chapterValue = std::make_shared<rapidjson::Value>(
+                            chapterArray[i],
+                            document->GetAllocator()
+                    );
+                    chapters->push_back(
+                            std::make_shared<ffmpeg_kit_flutter::Chapter>(chapterValue)
+                    );
                 }
             }
         }

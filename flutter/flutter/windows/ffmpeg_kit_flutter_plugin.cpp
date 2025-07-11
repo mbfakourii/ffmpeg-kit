@@ -138,6 +138,8 @@ namespace ffmpeg_kit_flutter {
                             list.push_back(flutter::EncodableValue(item.GetInt()));
                         } else if (item.IsDouble()) {
                             list.push_back(flutter::EncodableValue(item.GetDouble()));
+                        } else if (item.IsObject() || item.IsArray()) {
+                            list.push_back(convertJsonToEncodableValue(item));
                         }
                     }
                     map[flutter::EncodableValue(key)] = flutter::EncodableValue(list);
