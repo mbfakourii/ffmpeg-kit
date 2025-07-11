@@ -534,6 +534,45 @@ namespace ffmpeg_kit_flutter {
                 result->Error("INVALID_ARGUMENT", "Arguments are not a map");
                 return;
             }
+        } else if (method_call.method_name().compare("abstractSessionGetLogs") == 0) {
+             const auto* arguments = std::get_if<flutter::EncodableMap>(method_call.arguments());
+             if (arguments) {
+                 auto it = arguments->find(flutter::EncodableValue("sessionId"));
+                 auto waitTimeoutIt = arguments->find(flutter::EncodableValue("waitTimeout"));
+                 if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
+                     long sessionId = std::get<int>(it->second);
+
+                     int waitTimeout = ffmpeg_kit_flutter::AbstractSession::DefaultTimeoutForAsynchronousMessagesInTransmit;
+                     if (waitTimeoutIt != arguments->end() &&
+                         std::holds_alternative<int>(waitTimeoutIt->second)) {
+                         waitTimeout = std::get<int>(waitTimeoutIt->second);
+                     }
+
+                     std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
+                         sessionId);
+
+                    auto logsPtr = session->getLogs();
+                    flutter::EncodableList encLogs;
+
+                    for (const auto& log : *logsPtr) {
+                        flutter::EncodableMap sessionMap;
+                        sessionMap[flutter::EncodableValue("level")] = flutter::EncodableValue(log->getLevel());
+                        sessionMap[flutter::EncodableValue("message")] = flutter::EncodableValue(log->getMessage());
+                        sessionMap[flutter::EncodableValue("sessionId")] = flutter::EncodableValue(static_cast<int>(log->getSessionId()));
+
+                        encLogs.push_back(flutter::EncodableValue(std::move(sessionMap)));
+                    }
+
+                    result->Success(flutter::EncodableValue(encLogs));
+                 } else {
+                     result->Error("INVALID_SESSION", "Invalid session id.");
+                     return;
+                 }
+             }
+             else {
+                 result->Error("INVALID_ARGUMENT", "Arguments are not a map");
+                 return;
+             }
         } else if (method_call.method_name().compare("enableStatistics") == 0) {
             ffmpeg_kit_flutter::FFmpegKitConfig::enableStatisticsCallback(
                     [](const std::shared_ptr <ffmpeg_kit_flutter::Statistics> statistics) {

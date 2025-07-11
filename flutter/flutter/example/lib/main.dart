@@ -169,7 +169,8 @@ class _FFmpegExampleState extends State<FFmpegExample> {
             status = "Conversion failed.";
           });
 
-          debugPrint(await session.getAllLogsAsString());
+          // debugPrint(await session.getAllLogsAsString());
+          debugPrint(await session.getLogsAsString());
         }
       },
       null,
