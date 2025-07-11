@@ -534,6 +534,38 @@ namespace ffmpeg_kit_flutter {
                 result->Error("INVALID_ARGUMENT", "Arguments are not a map");
                 return;
             }
+        } else if (method_call.method_name().compare("abstractSessionGetFailStackTrace") == 0) {
+            const auto *arguments = std::get_if<flutter::EncodableMap>(method_call.arguments());
+            if (arguments) {
+                auto it = arguments->find(flutter::EncodableValue("sessionId"));
+                auto waitTimeoutIt = arguments->find(flutter::EncodableValue("waitTimeout"));
+                if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
+                    long sessionId = std::get<int>(it->second);
+
+                    int waitTimeout = ffmpeg_kit_flutter::AbstractSession::DefaultTimeoutForAsynchronousMessagesInTransmit;
+                    if (waitTimeoutIt != arguments->end() &&
+                        std::holds_alternative<int>(waitTimeoutIt->second)) {
+                        waitTimeout = std::get<int>(waitTimeoutIt->second);
+                    }
+
+                    std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
+                            sessionId);
+
+                    std::string failStackTrace = session->getFailStackTrace();
+                    if (failStackTrace.empty()) {
+                        result->Success(flutter::EncodableValue(
+                                session->getAllLogsAsStringWithTimeout(waitTimeout)));
+                    } else {
+                        result->Success(flutter::EncodableValue(failStackTrace));
+                    }
+                } else {
+                    result->Error("INVALID_SESSION", "Invalid session id.");
+                    return;
+                }
+            } else {
+                result->Error("INVALID_ARGUMENT", "Arguments are not a map");
+                return;
+            }
         } else if (method_call.method_name().compare("abstractSessionGetLogs") == 0) {
              const auto* arguments = std::get_if<flutter::EncodableMap>(method_call.arguments());
              if (arguments) {
