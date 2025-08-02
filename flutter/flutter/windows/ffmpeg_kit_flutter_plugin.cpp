@@ -409,6 +409,11 @@ namespace ffmpeg_kit_flutter {
                             session);
                     std::shared_ptr <ffmpeg_kit_flutter::MediaInformation> mediaInformation = mediaInformationSession->getMediaInformation();
 
+                    if (!mediaInformation) {
+                        result->Success();
+                        return;
+                    }
+
                     auto allProperties = mediaInformation->getAllProperties();
 
                     // Only formatted has encoded

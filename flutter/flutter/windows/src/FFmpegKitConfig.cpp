@@ -885,10 +885,10 @@ executeFFmpeg(const long sessionId, const std::shared_ptr <std::list<std::string
                 }
                 else if (tokens[i].find("time=") == 0 && tokens[i].length() > 5) {
                     std::string timeStr = tokens[i].substr(5);
-                    int minutes = std::stoi(timeStr.substr(0, 2));
-                    int seconds = std::stoi(timeStr.substr(3, 2));
-                    double milliseconds = std::stod(timeStr.substr(6, 2));
-                    time = (minutes * 60 + seconds) * 1000 + milliseconds * 10;
+                    int hours = std::stoi(timeStr.substr(0, 2));
+                    int minutes = std::stoi(timeStr.substr(3, 2));
+                    double seconds = std::stod(timeStr.substr(6));
+                    time = (hours * 3600 + minutes * 60 + seconds) * 1000.0;
                 }
                 else if (tokens[i].find("bitrate=") == 0 && tokens[i].length() > 8) {
                     std::string bitrateStr = tokens[i].substr(8);
