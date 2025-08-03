@@ -313,12 +313,14 @@ namespace ffmpeg_kit_flutter {
             if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
                 long sessionId = std::get<int>(it->second);
 
-                std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
+            
+
+                std::thread([sessionId, result = std::move(result)]() mutable {
+                    std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
                         sessionId);
-                std::shared_ptr <ffmpeg_kit_flutter::FFprobeSession> ffprobeSession = std::static_pointer_cast<ffmpeg_kit_flutter::FFprobeSession>(
+                    std::shared_ptr <ffmpeg_kit_flutter::FFprobeSession> ffprobeSession = std::static_pointer_cast<ffmpeg_kit_flutter::FFprobeSession>(
                         session);
 
-                std::thread([ffprobeSession, result = std::move(result)]() mutable {
                     ffmpeg_kit_flutter::FFmpegKitConfig::ffprobeExecute(ffprobeSession);
 
                     result->Success();
@@ -375,12 +377,14 @@ namespace ffmpeg_kit_flutter {
                 if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
                     long sessionId = std::get<int>(it->second);
 
-                    std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
+                   
+
+                    std::thread([sessionId, result = std::move(result)]() mutable {
+                        std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
                             sessionId);
-                    std::shared_ptr <ffmpeg_kit_flutter::FFmpegSession> ffmpegSession = std::static_pointer_cast<ffmpeg_kit_flutter::FFmpegSession>(
+                        std::shared_ptr <ffmpeg_kit_flutter::FFmpegSession> ffmpegSession = std::static_pointer_cast<ffmpeg_kit_flutter::FFmpegSession>(
                             session);
 
-                    std::thread([ffmpegSession, result = std::move(result)]() mutable {
                         ffmpeg_kit_flutter::FFmpegKitConfig::ffmpegExecute(ffmpegSession);
 
                         result->Success();
@@ -437,13 +441,14 @@ namespace ffmpeg_kit_flutter {
                 if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
                     long sessionId = std::get<int>(it->second);
 
-                    std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
+                    // Monitor process completion and handle results
+                    std::thread([sessionId, result = std::move(result)]() mutable {
+
+                        std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
                             sessionId);
-                    std::shared_ptr <ffmpeg_kit_flutter::MediaInformationSession> mediaInformationSession = std::static_pointer_cast<ffmpeg_kit_flutter::MediaInformationSession>(
+                        std::shared_ptr <ffmpeg_kit_flutter::MediaInformationSession> mediaInformationSession = std::static_pointer_cast<ffmpeg_kit_flutter::MediaInformationSession>(
                             session);
 
-                    // Monitor process completion and handle results
-                    std::thread([mediaInformationSession, result = std::move(result)]() mutable {
                         ffmpeg_kit_flutter::FFmpegKitConfig::getMediaInformationExecute(
                                 mediaInformationSession,
                                 ffmpeg_kit_flutter::AbstractSession::DefaultTimeoutForAsynchronousMessagesInTransmit);
@@ -529,8 +534,15 @@ namespace ffmpeg_kit_flutter {
                     std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
                             sessionId);
 
-                    result->Success(flutter::EncodableValue(
+
+                    if (session) {
+                        result->Success(flutter::EncodableValue(
                             session->getAllLogsAsStringWithTimeout(waitTimeout)));
+                    }
+                    else {
+                        std::cerr << "[Error] Session not found for sessionId: " << sessionId << std::endl;
+                        result->Error("SESSION_NOT_FOUND", "Session is null for given sessionId.");
+                    }
                 } else {
                     result->Error("INVALID_SESSION", "Invalid session id.");
                     return;

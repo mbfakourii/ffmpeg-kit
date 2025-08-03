@@ -49,7 +49,7 @@ static std::list <std::shared_ptr<ffmpeg_kit_flutter::Session>> sessionHistoryLi
 static std::recursive_mutex sessionMutex;
 
 /** Session control variables */
-#define SESSION_MAP_SIZE 1000
+#define SESSION_MAP_SIZE 1000000
 static std::atomic<short> sessionMap[SESSION_MAP_SIZE];
 static std::atomic<int> sessionInTransitMessageCountMap[SESSION_MAP_SIZE];
 
@@ -1086,8 +1086,9 @@ int executeFFprobe(const long sessionId, const std::shared_ptr <std::list<std::s
             sessionId, ffmpeg_kit_flutter::LevelAVLogStdErr, buffer
         );
 
-
-        session->addLog(log);
+        if(session){
+         session->addLog(log);
+        }
     }
 
     if (!readSuccess && GetLastError() != ERROR_BROKEN_PIPE) {
@@ -1130,7 +1131,7 @@ void *ffmpegKitInitialize() {
     std::call_once(ffmpegKitInitializerFlag, []() {
         std::cout << "Loading ffmpeg-kit." << std::endl;
 
-        sessionHistorySize = 10;
+        sessionHistorySize = 1000;
 
         for (int i = 0; i < SESSION_MAP_SIZE; i++) {
             std::atomic_init(&sessionMap[i], (short) 0);
@@ -1478,9 +1479,12 @@ void ffmpeg_kit_flutter::FFmpegKitConfig::ffmpegExecute(
 
 void ffmpeg_kit_flutter::FFmpegKitConfig::ffprobeExecute(
         const std::shared_ptr <ffmpeg_kit_flutter::FFprobeSession> ffprobeSession) {
-    ffprobeSession->startRunning();
-
     try {
+        if (!ffprobeSession) {
+            return;
+        }
+
+        ffprobeSession->startRunning();
         int returnCode = executeFFprobe(ffprobeSession->getSessionId(),
                                         ffprobeSession->getArguments());
         ffprobeSession->complete(std::make_shared<ffmpeg_kit_flutter::ReturnCode>(returnCode));
