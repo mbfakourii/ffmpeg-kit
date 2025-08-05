@@ -49,7 +49,7 @@ static std::list <std::shared_ptr<ffmpeg_kit_flutter::Session>> sessionHistoryLi
 static std::recursive_mutex sessionMutex;
 
 /** Session control variables */
-#define SESSION_MAP_SIZE 1000000
+#define SESSION_MAP_SIZE 1000
 static std::atomic<short> sessionMap[SESSION_MAP_SIZE];
 static std::atomic<int> sessionInTransitMessageCountMap[SESSION_MAP_SIZE];
 
@@ -1131,7 +1131,7 @@ void *ffmpegKitInitialize() {
     std::call_once(ffmpegKitInitializerFlag, []() {
         std::cout << "Loading ffmpeg-kit." << std::endl;
 
-        sessionHistorySize = 1000;
+        sessionHistorySize = 10;
 
         for (int i = 0; i < SESSION_MAP_SIZE; i++) {
             std::atomic_init(&sessionMap[i], (short) 0);

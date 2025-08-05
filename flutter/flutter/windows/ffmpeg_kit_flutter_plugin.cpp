@@ -313,8 +313,6 @@ namespace ffmpeg_kit_flutter {
             if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
                 long sessionId = std::get<int>(it->second);
 
-            
-
                 std::thread([sessionId, result = std::move(result)]() mutable {
                     std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
                         sessionId);
@@ -376,8 +374,6 @@ namespace ffmpeg_kit_flutter {
                 auto it = arguments->find(flutter::EncodableValue("sessionId"));
                 if (it != arguments->end() && std::holds_alternative<int>(it->second)) {
                     long sessionId = std::get<int>(it->second);
-
-                   
 
                     std::thread([sessionId, result = std::move(result)]() mutable {
                         std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
@@ -443,7 +439,6 @@ namespace ffmpeg_kit_flutter {
 
                     // Monitor process completion and handle results
                     std::thread([sessionId, result = std::move(result)]() mutable {
-
                         std::shared_ptr <ffmpeg_kit_flutter::Session> session = ffmpeg_kit_flutter::FFmpegKitConfig::getSession(
                             sessionId);
                         std::shared_ptr <ffmpeg_kit_flutter::MediaInformationSession> mediaInformationSession = std::static_pointer_cast<ffmpeg_kit_flutter::MediaInformationSession>(
