@@ -1957,7 +1957,13 @@ std::string ffmpeg_kit_flutter::FFmpegKitConfig::argumentsToString(
         if (it != arguments->begin()) {
             string += " ";
         }
-        string += argument;
+
+        // Check if argument is a file path (contains backslashes) and has spaces
+        if (argument.find('\\') != std::string::npos && argument.find(' ') != std::string::npos) {
+            string += "\"" + argument + "\"";
+        } else {
+            string += argument;
+        }
     }
 
     return string;
