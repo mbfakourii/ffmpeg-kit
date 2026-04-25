@@ -63,7 +63,7 @@ get_library_source() {
     ;;
   gnutls)
     SOURCE_REPO_URL="https://github.com/gnutls/gnutls"
-    SOURCE_ID="3.8.9"
+    SOURCE_ID="3.8.12"
     SOURCE_TYPE="TAG"
     ;;
   harfbuzz)
@@ -198,7 +198,7 @@ get_library_source() {
     ;;
   sdl)
     SOURCE_REPO_URL="https://github.com/arthenica/SDL"
-    SOURCE_ID="release-2.0.8"
+    SOURCE_ID="release-2.32.10"
     SOURCE_TYPE="TAG"
     ;;
   shine)
