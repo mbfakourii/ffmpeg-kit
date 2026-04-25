@@ -345,9 +345,9 @@ if [[ -n ${ANDROID_ARCHITECTURES} ]]; then
   # BUILD NATIVE LIBRARY
   if [[ ${SKIP_ffmpeg_kit} -ne 1 ]]; then
     if [ "$(is_darwin_arm64)" == "1" ]; then
-       arch -x86_64 "${ANDROID_NDK_ROOT}"/ndk-build -B 1>>"${BASEDIR}"/build.log 2>&1
+       arch -x86_64 "${ANDROID_NDK_ROOT}"/ndk-build -B APP_ALLOW_MISSING_DEPS=true 1>>"${BASEDIR}"/build.log 2>&1
     else
-      "${ANDROID_NDK_ROOT}"/ndk-build -B 1>>"${BASEDIR}"/build.log 2>&1
+      "${ANDROID_NDK_ROOT}"/ndk-build -B APP_ALLOW_MISSING_DEPS=true 1>>"${BASEDIR}"/build.log 2>&1
     fi
 
     if [ $? -eq 0 ]; then
