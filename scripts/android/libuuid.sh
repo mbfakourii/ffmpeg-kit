@@ -8,6 +8,10 @@ if [[ ! -f "${BASEDIR}"/src/"${LIB_NAME}"/configure ]] || [[ ${RECONF_libuuid} -
   autoreconf_library "${LIB_NAME}" 1>>"${BASEDIR}"/build.log 2>&1 || return 1
 fi
 
+# FIX: NDK 27 requires explicit <sys/file.h> for flock()
+# Instead of patching source, force-include the header via compiler flag
+export CFLAGS="${CFLAGS} -include sys/file.h"
+
 ./configure \
   --prefix="${LIB_INSTALL_PREFIX}" \
   --with-pic \
