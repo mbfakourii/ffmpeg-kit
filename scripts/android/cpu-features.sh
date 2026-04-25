@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export CMAKE_POLICY_VERSION_MINIMUM=3.5
+
 $(android_ndk_cmake) || return 1
 
 make -C "$(get_cmake_build_directory)" || return 1
