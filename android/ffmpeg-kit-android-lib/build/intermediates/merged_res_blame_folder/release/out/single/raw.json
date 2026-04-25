@@ -104,10 +104,6 @@
         "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_libuuid.txt"
     },
     {
-        "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_libaom.txt",
-        "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_libaom.txt"
-    },
-    {
         "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_libvorbis.txt",
         "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_libvorbis.txt"
     },
@@ -140,12 +136,12 @@
         "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_opencore_amr.txt"
     },
     {
-        "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_expat.txt",
-        "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_expat.txt"
-    },
-    {
         "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/source.txt",
         "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/source.txt"
+    },
+    {
+        "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_expat.txt",
+        "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_expat.txt"
     },
     {
         "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_libvidstab.txt",
@@ -178,10 +174,6 @@
     {
         "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_libogg.txt",
         "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_libogg.txt"
-    },
-    {
-        "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_sdl.txt",
-        "source": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-main-4:/raw/license_sdl.txt"
     },
     {
         "merged": "com.arthenica.ffmpegkit.ffmpeg-kit-android-lib-merged_res-3:/raw/license_speex.txt",

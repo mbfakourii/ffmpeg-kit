@@ -14,7 +14,6 @@ int raw license_jpeg 0x0
 int raw license_kvazaar 0x0
 int raw license_lame 0x0
 int raw license_leptonica 0x0
-int raw license_libaom 0x0
 int raw license_libass 0x0
 int raw license_libiconv 0x0
 int raw license_libilbc 0x0
@@ -34,7 +33,6 @@ int raw license_opencore_amr 0x0
 int raw license_openh264 0x0
 int raw license_opus 0x0
 int raw license_rubberband 0x0
-int raw license_sdl 0x0
 int raw license_shine 0x0
 int raw license_snappy 0x0
 int raw license_soxr 0x0

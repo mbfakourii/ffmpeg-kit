@@ -16,7 +16,6 @@ raw license_jpeg
 raw license_kvazaar
 raw license_lame
 raw license_leptonica
-raw license_libaom
 raw license_libass
 raw license_libiconv
 raw license_libilbc
@@ -36,7 +35,6 @@ raw license_opencore_amr
 raw license_openh264
 raw license_opus
 raw license_rubberband
-raw license_sdl
 raw license_shine
 raw license_snappy
 raw license_soxr
