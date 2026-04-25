@@ -39,9 +39,38 @@ make distclean 2>/dev/null 1>/dev/null
 
 # REGENERATE BUILD FILES IF NECESSARY OR REQUESTED
 if [[ ! -f "${BASEDIR}"/src/"${LIB_NAME}"/configure ]] || [[ ${RECONF_gnutls} -eq 1 ]]; then
+
+  # autoconf fails when AM_GNU_GETTEXT_REQUIRE_VERSION appears more than once (NDK 27)
+  awk '/AM_GNU_GETTEXT_REQUIRE_VERSION/{if(seen++)next} 1' \
+    "${BASEDIR}/src/${LIB_NAME}/configure.ac" \
+    > "${BASEDIR}/src/${LIB_NAME}/configure.ac.tmp" \
+    && mv "${BASEDIR}/src/${LIB_NAME}/configure.ac.tmp" \
+          "${BASEDIR}/src/${LIB_NAME}/configure.ac"
+
   ./bootstrap --skip-po || return 1
   git submodule update --remote gnulib || return 1
   overwrite_file ./gnulib/lib/fpending.c ./src/gl/fpending.c || return 1
+
+   # automake --add-missing copies required auxiliary files (install-sh, missing, depcomp)
+    # that may not exist in the source tree when building with newer toolchains (NDK 27)
+  automake --add-missing --copy 2>/dev/null || true
+fi
+
+# CRAU_MAYBE_UNUSED is used in source but not defined when building with NDK 27
+# prepend the define to crau.h using cat to avoid macOS sed -i incompatibility
+# ffmpeg-kit-patch marker prevents double-patching on repeated builds
+CRAU_H="${BASEDIR}/src/${LIB_NAME}/lib/crau/crau.h"
+if [[ -f "${CRAU_H}" ]]; then
+  if ! grep -q "ffmpeg-kit-patch" "${CRAU_H}"; then
+    printf '/* ffmpeg-kit-patch */\n#define CRAU_MAYBE_UNUSED __attribute__((unused))\n' \
+      | cat - "${CRAU_H}" > "${CRAU_H}.tmp" \
+      && mv "${CRAU_H}.tmp" "${CRAU_H}"
+    echo "INFO: patched crau.h with CRAU_MAYBE_UNUSED"
+  fi
+else
+  echo "ERROR: crau.h not found at ${CRAU_H}"
+  find "${BASEDIR}/src/${LIB_NAME}" -name "crau.h" 2>/dev/null
+  return 1
 fi
 
 ./configure \
