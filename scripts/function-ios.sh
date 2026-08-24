@@ -220,17 +220,27 @@ get_app_specific_cflags() {
   leptonica)
     APP_FLAGS="-std=c99 -Wno-unused-function -DOS_IOS"
     ;;
-  libwebp | xvidcore)
+  libwebp)
     APP_FLAGS="-fno-common -DPIC"
+    ;;
+  xvidcore)
+    # Xvid 1.3.x redeclares bool, which is a reserved keyword under C23.
+    APP_FLAGS="-std=c99 -fno-common -DPIC"
     ;;
   openh264 | openssl | x265)
     APP_FLAGS="-Wno-unused-function"
     ;;
   sdl)
-    APP_FLAGS="-DPIC -Wno-declaration-after-statement -Wno-unused-function -D__IPHONEOS__"
+    # SDL's configure script enables ARC for macOS but skips the ARC check in
+    # its iOS branch. Modern SDL UIKit sources contain weak properties and must
+    # be compiled with ARC when using recent Xcode/Clang versions.
+    APP_FLAGS="-DPIC -Wno-declaration-after-statement -Wno-unused-function -D__IPHONEOS__ -DSDL_VIDEO_DRIVER_UIKIT -fobjc-arc"
     ;;
   shine)
-    APP_FLAGS="-Wno-unused-function"
+    # Shine 3.1.x uses an old-style empty parameter list in l3mdct.h. C23
+    # interprets that as a zero-parameter prototype, conflicting with its
+    # one-parameter definition. Keep this legacy dependency on C99.
+    APP_FLAGS="-std=c99 -Wno-unused-function"
     ;;
   soxr | snappy)
     APP_FLAGS="-std=gnu99 -Wno-unused-function -DPIC"

@@ -160,8 +160,12 @@ get_app_specific_cflags() {
   leptonica)
     APP_FLAGS="-std=c99 -Wno-unused-function -DOS_MACOS"
     ;;
-  libwebp | xvidcore)
+  libwebp)
     APP_FLAGS="-fno-common -DPIC"
+    ;;
+  xvidcore)
+    # Xvid 1.3.x redeclares bool, which is a reserved keyword under C23.
+    APP_FLAGS="-std=c99 -fno-common -DPIC"
     ;;
   openh264 | x265)
     APP_FLAGS="-Wno-unused-function"
@@ -170,7 +174,10 @@ get_app_specific_cflags() {
     APP_FLAGS="-DPIC -Wno-unused-function -D__MACOSX__"
     ;;
   shine)
-    APP_FLAGS="-Wno-unused-function"
+    # Shine 3.1.x uses an old-style empty parameter list in l3mdct.h. C23
+    # interprets that as a zero-parameter prototype, conflicting with its
+    # one-parameter definition. Keep this legacy dependency on C99.
+    APP_FLAGS="-std=c99 -Wno-unused-function"
     ;;
   soxr | snappy)
     APP_FLAGS="-std=gnu99 -Wno-unused-function -DPIC"

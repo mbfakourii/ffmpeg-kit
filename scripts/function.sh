@@ -1786,7 +1786,7 @@ get_external_library_license_path() {
   19) echo "${BASEDIR}/src/$(get_library_name "$1")/$(get_library_name "$1")/LICENSE" ;;
   26) echo "${BASEDIR}/src/$(get_library_name "$1")/COPYING.LGPL" ;;
   28 | 38) echo "${BASEDIR}/src/$(get_library_name "$1")/LICENSE.md " ;;
-  30) echo "${BASEDIR}/src/$(get_library_name "$1")/COPYING.txt" ;;
+  30) echo "${BASEDIR}/src/$(get_library_name "$1")/LICENSE.txt" ;;
   43) echo "${BASEDIR}/src/$(get_library_name "$1")/COPYRIGHT" ;;
   46) echo "${BASEDIR}/src/$(get_library_name "$1")/leptonica-license.txt" ;;
   10 | 13 | 17 | 21 | 27 | 31 | 32 | 36 | 40 | 49) echo "${BASEDIR}/src/$(get_library_name "$1")/LICENSE" ;;
