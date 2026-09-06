@@ -21,7 +21,7 @@ namespace ffmpeg_kit_flutter {
     public:
 
         /** Global library version */
-        static constexpr const char *FFmpegKitVersion = "7.1.1";
+        static constexpr const char *FFmpegKitVersion = "7.1.5";
 
         /**
          * Prefix of named pipes created by ffmpeg-kit.

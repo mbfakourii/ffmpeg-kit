@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdk 24
         targetSdk 33
-        versionCode 240600
-        versionName "6.0"
+        versionCode 70105
+        versionName "7.1.5"
         project.archivesBaseName = "ffmpeg-kit"
         consumerProguardFiles "consumer-rules.pro"
     }
